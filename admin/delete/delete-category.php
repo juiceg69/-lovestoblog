@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . "/../config_adm/dataBase.php";
+
 session_start();
 
 ini_set('display_errors', 1);
@@ -11,8 +13,6 @@ if (!isset($_SESSION['idUser'])) {
     header('Location: ' . BASE_URL . 'login.php');
     exit();
 }
-
-require_once __DIR__ . "/../config_adm/dataBase.php";
 
 if (isset($_GET['id'])) {
     $idCita = filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
