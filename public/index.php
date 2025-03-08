@@ -23,4 +23,8 @@ if (file_exists($filename) && is_readable($filename)) {
     } else {
         http_response_code(500);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 90c2e619bb73005d0c2f0f50f2d5c3cc9326b70c
